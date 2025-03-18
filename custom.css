@@ -4,6 +4,7 @@
 
 body {
     --cpd-color-icon-accent-tertiary: #FF79C6;
+    --cpd-color-bg-canvas-default: #181825;
 }
 
 pre,
@@ -16,12 +17,17 @@ code {
 }
 
 .mx_SpacePanel {
-    background-color: #1c1d22;
+    background-color: #181825;
     border-right: 1px solid #282A36;
 }
 
+.mx_LeftPanel_outerWrapper {
+    box-shadow: -6px 0px 24px 0px rgba(10, 10, 10, 0.8);
+    z-index: 2;
+}
+
 .mx_LeftPanel_wrapper .mx_LeftPanel_wrapper--user {
-    background-color: #1c1d22;
+    background-color: #181825;
     border-right: 1px solid #282A36;
 }
 
@@ -35,12 +41,12 @@ code {
 
 .mx_EventTile[data-layout=bubble][data-self=false]:has(.mx_EventTile_content),
 .mx_EventTile[data-layout=bubble][data-self=true]:has(.mx_EventTile_content) {
-    --backgroundColor: #282A36;
+    --backgroundColor: #101016;
 }
 
 .mx_EventTile[data-layout=bubble][data-self=false]:has(.mx_EventTile_content):hover,
 .mx_EventTile[data-layout=bubble][data-self=true]:has(.mx_EventTile_content):hover {
-    --backgroundColor: #2c2934;
+    --backgroundColor: #0c0c11;
 }
 
 .mx_ReplyChain .mx_ReplyChain_show.mx_AccessibleButton_kind_link_inline,
