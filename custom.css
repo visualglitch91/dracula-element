@@ -38,6 +38,11 @@ code {
     --backgroundColor: #282A36;
 }
 
+.mx_EventTile[data-layout=bubble][data-self=false]:has(.mx_EventTile_content):hover,
+.mx_EventTile[data-layout=bubble][data-self=true]:has(.mx_EventTile_content):hover {
+    --backgroundColor: #2c2934;
+}
+
 .mx_ReplyChain .mx_ReplyChain_show.mx_AccessibleButton_kind_link_inline,
 .mx_ReplyTile > a {
     color: #ffffff;
@@ -67,9 +72,12 @@ code {
     font-weight: bolder;
 }
 
+.mx_EventTile[data-layout=bubble].mx_EventTile_selected:before,
+.mx_EventTile[data-layout=bubble]:hover:before,
 .mx_EventTile[data-layout=bubble].mx_EventTile_highlight:before {
     background: transparent;
 }
+
 
 .mx_TimelineSeparator > hr {
     border-color: #8BE9FD;
