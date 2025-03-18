@@ -1,0 +1,89 @@
+* {
+    font-family: "Fira Sans";
+}
+
+body {
+    --cpd-color-icon-accent-tertiary: #FF79C6;
+}
+
+pre,
+code {
+    font-family: "Fira Mono";
+}
+
+.mx_BackdropPanel {
+    display: none !important;
+}
+
+.mx_SpacePanel {
+    background-color: #1c1d22;
+    border-right: 1px solid #282A36;
+}
+
+.mx_LeftPanel_wrapper .mx_LeftPanel_wrapper--user {
+    background-color: #1c1d22;
+    border-right: 1px solid #282A36;
+}
+
+[aria-label="Recent rooms"] {
+    display: none !important;
+}
+
+.mx_MessageComposer {
+    border-top: 1px solid #282A36;
+}
+
+.mx_EventTile[data-layout=bubble][data-self=false]:has(.mx_EventTile_content),
+.mx_EventTile[data-layout=bubble][data-self=true]:has(.mx_EventTile_content) {
+    --backgroundColor: #282A36;
+}
+
+.mx_ReplyChain .mx_ReplyChain_show.mx_AccessibleButton_kind_link_inline,
+.mx_ReplyTile > a {
+    color: #ffffff;
+}
+
+.mx_Pill.mx_AtRoomPill,
+.mx_Pill.mx_KeywordPill,
+.mx_Pill.mx_UserPill_me,
+.mx_Pill {
+    background-color: #BD93F9 !important;
+    color: #000;
+}
+
+.mx_SpacePanel.collapsed {
+    width: 0px;
+    display: none;
+}
+
+.mx_NotificationBadge.mx_NotificationBadge_visible,
+.mx_NotificationBadge.mx_NotificationBadge_visible.mx_NotificationBadge_dot {
+    background-color: #50FA7B;
+}
+
+.mx_NotificationBadge.mx_NotificationBadge_visible .mx_NotificationBadge_count {
+    color: #000;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.mx_EventTile[data-layout=bubble].mx_EventTile_highlight:before {
+    background: transparent;
+}
+
+.mx_TimelineSeparator > hr {
+    border-color: #8BE9FD;
+}
+
+.mx_Dialog_fixedWidth {
+    border-radius: 12px;
+    border: 2px solid #8BE9FD;
+}
+
+.mx_Dialog_wrapper {
+    backdrop-filter: blur(4px);
+}
+
+.mx_RoomTile .mx_RoomTile_titleContainer .mx_RoomTile_title.mx_RoomTile_titleHasUnreadEvents {
+    font-weight: 400;
+}
